@@ -24,7 +24,7 @@ class Routes
         ) {
             require_once 'Controller/' . $route . '.php';
             $controller = new $route();
-            var_dump('Controller utiliser : ' . $route);
+            //var_dump('Controller utiliser : ' . $route);
         } else {
             require_once 'Controller/error404.php';
             $controller = new error404();

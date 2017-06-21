@@ -1,0 +1,10 @@
+{
+    "name": "eden/lvl",
+    "description": "entrainement",
+    "type": "project",
+    "license": "legionastartes",
+    "minimum-stability": "stable",
+    "require": {
+        "twig/twig": "^2.0"
+    }
+}
