@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lvl 0</title>
+    <link rel="stylesheet" href="/composant/theme/css/main.css">
+    <script src="/composant/theme/js/jquery.js"></script>
+    <script src="/composant/theme/js/main.js"></script>
+</head>
+<body>
+
+{% if header %}
+    {{ header|raw }}
+{% endif %}
+
+{% if content %}
+    {{ content|raw }}
+{% endif %}
+
+{% if footer %}
+    {{ footer|raw }}
+{% endif %}
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+accueil.render:
+  path: 'accueil'
+  controller: '\Composant\Controller\accueil'
+  title: 'TOTO'
+gamelist.render:
+  path: 'gamelist'
+  controller: '\Composant\Controller\gamelist'
+  title: 'TOTO'
+contact.render:
+  path: 'contact'
+  controller: '\Composant\Controller\contact'
+  title: 'TOTO'
+baignoire.render:
+  path: 'baignoire'
+  controller: '\Composant\Controller\baignoire'
+  title: 'TOTO'

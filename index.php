@@ -1,7 +1,13 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
-require_once 'Controller/IController.php';
-require_once 'Controller/Controller.php';
+
+session_start();
+define('DS', DIRECTORY_SEPARATOR); // meilleur portabilité sur les différents systeme.
+define('ROOT', dirname(__FILE__) . DS); // pour ce simplifier la vie
+
+echo Core\controller\Controller::dispatcher();
+
+/*
 
 $loader = new Twig_Loader_Filesystem('templates'); // Dossier contenant les templates
 $twig = new Twig_Environment($loader, array(

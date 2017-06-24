@@ -1,0 +1,4 @@
+config_cache:
+  twig_cache_active: 0
+  twig_cache_path: 'composant/cache/Twig'
+
