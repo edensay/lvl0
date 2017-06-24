@@ -1,0 +1,49 @@
+<script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+
+    return t;
+}(document, "script", "twitter-wjs"));</script>
+
+
+
+<h2>Liste des jeux :</h2>
+
+<ul id="game_list">
+    <li>
+        <a href="#">GAME A</a>
+        <div class="game">
+            <ul>
+                <li class="element-game"><span>Description jeux</span><a href="?page=gameA">...lire la suite</a></li>
+            </ul>
+        </div>
+    </li>
+
+    <li>
+        <a href="#">GAME B</a>
+        <div class="game">
+            <ul>
+                <li class="element-game"><span>Description jeux</span><a href="?page=gameB">...lire la suite</a></li>
+            </ul>
+        </div>
+    </li>
+</ul>
+<button class="button" id="twbutton" >Twitter</button>
+<div class="centre" id="twcont" >
+    <a class="twitter-timeline"
+       href="https://twitter.com/Games_Workshop1"
+       data-width="400"
+       data-height="500">
+        Tweets by Games_Workshop1
+    </a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>

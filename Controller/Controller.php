@@ -3,34 +3,28 @@
 
 abstract class Controller implements IController
 {
-
-
-    public function html()
-    {
-        $html = new View();
-        $header  = $this->header();
-        global $header;
-
-        return $html->getView('html', []);
-    }
-
-    public function header()
-    {
-
-        $header = new View();
-        return $header->getView('header', []);
-    }
-
-    public function footer()
-    {
-        $footer = new View();
-        return $footer->getView('footer', []);
-    }
-
     public function content()
     {
-        $content = new View();
-        return $content->getView('content', []);
+        $page = htmlspecialchars($_GET["page"]);
+        if($page = "accueil") {
+            include('accueil.html'); }
+        Else if($page = "gamelist") {
+            include('gameslist.html'); }
+        Else if($page = "contact") {
+            include('contact.html'); }
+        Else if($page = "gameA") {
+            include('GameA.html'); }
+        Else if($page = "gameB") {
+            include('GameB.html'); };
+
     }
+
 }
+
+/* Ou alors  if(htmlspecialchars($_GET["page"]) = "accueil") {
+                $accueil = new View();
+                return $accueil->getView('accueil', []); }
+
+htmlspecialchars($_POST["page"]) pour que le ?page=... ne soit pas visible
+*/
 
